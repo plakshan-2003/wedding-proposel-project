@@ -1,0 +1,39 @@
+/* --- UPDATED SLIDESHOW STYLING (300px x 300px) --- */
+
+/* 1. Container Styling: Enforcing the new 300px dimensions */
+#proposalCarousel {
+    width: 300px; /* Fixed Width: 300px */
+    height: 300px; /* Fixed Height: 300px (CRITICAL for no page resize) */
+    margin: 0 auto; /* Center the slideshow on the page */
+    overflow: hidden; 
+}
+
+/* 2. Inner Container Styling: Ensures the inner slide container matches */
+.carousel-fixed-height {
+    height: 100%; /* Matches the 300px height of #proposalCarousel */
+}
+
+/* 3. Image Styling: Ensures images fill the fixed container */
+.carousel-img {
+    height: 100%; /* Image height matches the 300px container height */
+    width: 100%; 
+    object-fit: cover; /* Ensures uniform size by cropping/filling */
+}
+
+/* Background opacity for text on images (remains the same) */
+.bg-dark-opacity {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* --- OTHER STYLES (Unmodified) --- */
+
+.profile-img {
+    height: 350px; 
+    object-fit: cover; 
+    border-bottom: 3px solid #dc3545; 
+}
+
+body {
+    padding-top: 70px; 
+    background-color: #f8f9fa; 
+}
